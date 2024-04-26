@@ -7,7 +7,7 @@ import (
 )
 
 type Port struct {
-	http int64
+	Http int64
 }
 
 type App struct {
@@ -66,7 +66,7 @@ func NewConfig() Config {
 			Name: viper.GetString("APP_NAME"),
 			Env:  viper.GetString("APP_ENV"),
 			Port: Port{
-				http: viper.GetInt64("APP_PORT_HTTP"),
+				Http: viper.GetInt64("APP_PORT_HTTP"),
 			},
 			Log: viper.GetString("APP_LOG"),
 		},

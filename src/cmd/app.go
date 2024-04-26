@@ -1,13 +1,15 @@
 package main
 
 import (
-	"fmt"
-
 	"github.com/ayocodingit/boilerplate-clean-archicture-go/src/config"
+	"github.com/ayocodingit/boilerplate-clean-archicture-go/src/transport/http"
 )
 
 func main() {
 	config := config.NewConfig()
 
-	fmt.Println(config)
+	app := http.NewHttp()
+
+	app.Run(config.App.Port.Http)
+
 }

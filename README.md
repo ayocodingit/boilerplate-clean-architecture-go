@@ -5,7 +5,7 @@
 - Golang v1.22.2
 - SqlDriver
 - Docker
-- Gin (HTTP framework)
+- Echo (HTTP framework)
 
 ## Design Pattern: Clean Architecture
 
